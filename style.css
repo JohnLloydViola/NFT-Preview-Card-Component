@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url(font/static/Outfit-Regular.ttf);
+}
+
+body {
+    font-family: 'Outfit-Regular', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 1.125rem;
+}
+
+.container {
+    width: 20%;
+    height:auto;
+    background-color: hsl(216, 50%, 16%);
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content > *, .creator > *, .description > *{
+    margin: 20px 0;
+}
+
+.image-container {
+    margin-top:0;
+    
+}
+
+.main-image {
+    display: block;
+    margin: 0 auto;
+    width:100%;
+}
+
+.image-container {
+    position: relative;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    border-radius: 10px;
+}
+
+.view-icon {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image-container:hover .view-icon {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-container:hover .main-image {
+    opacity: 0.5;
+}
+
+.image-container:hover {
+    background-color: hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+hr {
+    border:none;
+    background-color:hsl(215, 32%, 27%);
+    height: 1px;
+}
+
+.title {
+    color:hsl(0, 0%, 100%);
+}
+
+.title:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.main-title {
+    font-size: 1.25rem;
+}
+
+ p {
+    color:hsl(215, 51%, 70%);
+ }
+
+ .eth {
+    color:hsl(178, 100%, 50%);
+ }
+
+ .eth-currency,.eth-currency p {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ .creator {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+ }
+
+
+.eth-currency p img, .creator img {
+   margin-right: 10px;
+}
+
+
+ .creator img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: hsl(0, 0%, 100%);
+    border-width: 1px;
+    border-style: solid;
+ }
+
