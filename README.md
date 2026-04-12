@@ -1,1 +1,1 @@
-Front-end Mentor practice. Unfinished Responsiveness.
+Unfinished Responsiveness.
